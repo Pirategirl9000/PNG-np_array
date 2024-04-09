@@ -6,7 +6,7 @@ im = io.imread("image.png") #RGBA format
 imarr = np.array(im)
 
 #remove alpha
-imarr = imarr[ :, :, 0:3]
+imarr = imarr[ :, :, 0]
 
 f = open("file.txt", "w")
 
