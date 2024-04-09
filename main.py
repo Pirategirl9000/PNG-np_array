@@ -12,5 +12,9 @@ f = open("file.txt", "w")
 
 np.set_printoptions(threshold=sys.maxsize) #stop truncation
 
+#change to binary for grayscale and less memory
+imarr[imarr == 0] = 1
+imarr[imarr == 255] = 0
+
 f.write(f"{imarr}")
 f.close()
